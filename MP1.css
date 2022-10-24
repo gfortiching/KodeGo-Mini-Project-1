@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
   }
+
+  .logo {
+    width: 5em;
+  }
   
   i:hover {
     color: yellow;

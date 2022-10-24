@@ -10,12 +10,15 @@
     <title>Simple Web Page</title>
 </head>
 
-<body class="bg-gradient">
-<nav class="navbar navbar-expand-xl bg-opacity-10 bg-gradient pt-3 pb-3 pb-md-1">
-  <div class="container d-flex flex-row">
-    <a class="navbar-brand ps-4 pe-3 fs-5" href="#">Gabby</a>
-    <button class="menu-button ms-auto navbar-expand-xl d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span><i class="fa-solid fa-caret-down fs-2"></i></span>
+<body class="bg-opacity-10 bg-success bg-gradient">
+<nav class="navbar navbar-expand-xl bg-opacity-10 bg-success bg-gradient pt-4 pb-3 pb-md-3">
+  <div class="container d-flex flex-row justify-content-around">
+
+    <button class="nav-link bg-transparent border-0 text-black order-xl-1" href="#" id="navbarDropdownMenuLink" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-cart-shopping fs-4"></i></button>
+
+    <img src="Logo.png" class="logo order-0">
+
+    <button class="menu-button navbar-expand-xl d-xl-none order-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-caret-down fs-2 order-5"></i>
     </button>
 
     <div class="collapse navbar-collapse hiding p-0" id="navbarWithDropdown">
@@ -80,20 +83,13 @@
         <li class="nav-item ps-xl-2 d-flex d-xl-inline flex-column justify-content-center">
           <button class="nav-link bg-transparent border-0 text-black" href="#" id="navbarDropdownMenuLink" type="button" data-bs-toggle="dropdown" aria-expanded="false">Downloads</button>
         </li>
-        <li class="nav-item ps-xl-2 d-flex d-xl-inline flex-column justify-content-center">
-          <button class="nav-link bg-transparent border-0 text-black" href="#" id="navbarDropdownMenuLink" type="button" data-bs-toggle="dropdown" aria-expanded="false">English</button>
-        </li>
-        <li class="nav-item ps-xl-2 d-flex d-xl-inline flex-column justify-content-center">
-          <i class="fa-regular fa-sun-bright"></i></button>
-        </li>
         </ul>
       </span>
-
     </div>
   </div>
 </nav>
-            <div class="mt-2 mb-3">
-              <form class="d-flex justify-content-center align-items-center d-xl-flex order-3 ms-3 me-3">
+            <div class="pb-4 bg-opacity-10 bg-success bg-gradient">
+              <form class="d-flex justify-content-center align-items-center d-xl-flex order-3 ms-3">
                 <input class="form-control m-0 h-50 search-bar" placeholder="Search" aria-label="Search" required>
                 <button class="btn m-0 h-50 bg-gradient" type="submit">
                   <i class="fa-solid fa-magnifying-glass fs-4"></i>
@@ -280,7 +276,6 @@
       <i class="fa-solid fa-user pt-2 fs-3"></i>
     </div>
     <div class="col-sm-4 d-none d-sm-flex justify-content-center ps-0 pe-0 pt-2 pb-2 gap-5 bottom-menu">
-
     </div>
 </section>
 
@@ -310,6 +305,13 @@
      element.classList.toggle("dark-mode");
   }
   </script>
+
+<script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
 
 </body>
 </html>
