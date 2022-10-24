@@ -1,5 +1,13 @@
-* {
+  * {
     box-sizing: border-box;
+  }
+
+  body {
+    background-color: #ecf9ea;
+  }
+
+  nav {
+    background-color: #ecf9ea;
   }
 
   .logo {
@@ -16,11 +24,6 @@
     background: rgba(255, 255, 255, 0);
     color: rgb(118, 175, 122);
     border: 0;
-  }
-  
-  .menu-button:active {
-    color: yellow;
-    text-shadow: 0 0 10em rgb(255, 255, 0);
   }
   
   #register-now {
@@ -74,6 +77,10 @@
   
   .featured {
     background: none;
+  }
+
+  #search {
+    background-color: #ecf9ea;
   }
   
   .search-bar {

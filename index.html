@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="MP1.css">
     <link rel="stylesheet" href="Bootstrap 5.2.2/css/bootstrap.css">
     <script src="https://kit.fontawesome.com/b8b5c0695c.js" crossorigin="anonymous"></script>
-    <title>Simple Web Page</title>
+    <title>Backyard Planters</title>
 </head>
 
-<body class="bg-opacity-10 bg-success bg-gradient">
-<nav class="navbar navbar-expand-xl bg-opacity-10 bg-success bg-gradient pt-4 pb-3 pb-md-3">
+<body>
+<nav class="navbar navbar-expand-xl pt-4 pb-3 pb-md-3">
   <div class="container d-flex flex-row justify-content-around">
 
-    <button class="nav-link bg-transparent border-0 text-black order-xl-1" href="#" id="navbarDropdownMenuLink" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-cart-shopping fs-4"></i></button>
+    <button class="nav-link bg-transparent border-0 text-success order-xl-1" href="#" id="navbarDropdownMenuLink" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-cart-shopping fs-4"></i></button>
 
     <img src="Logo.png" class="logo order-0">
 
@@ -88,7 +88,7 @@
     </div>
   </div>
 </nav>
-            <div class="pb-4 bg-opacity-10 bg-success bg-gradient">
+            <div class="pt-2 pb-4" id="search">
               <form class="d-flex justify-content-center align-items-center d-xl-flex order-3 ms-3">
                 <input class="form-control m-0 h-50 search-bar" placeholder="Search" aria-label="Search" required>
                 <button class="btn m-0 h-50 bg-gradient" type="submit">
@@ -104,7 +104,7 @@
   <button type="button" class="btn-close btn-close-white p-0 mt-3 me-3" data-bs-dismiss="alert" aria-label="Close"></button>
 </section>
 
-<main>
+<main class="bg-gradiet bg-success bg-opacity-10 pt-md-5 pb-md-5">
   <div id="carouselWithCaptions" class="carousel slide d-none d-md-flex w-75 m-auto" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"></li>
@@ -143,8 +143,10 @@
       <span class="visually-hidden">Next</span>
     </a>
   </div>
+</main>
 
-  <div id="carouselWithCaptions" class="carousel slide d-md-none" data-bs-ride="carousel">
+<main class="bg-gradiet bg-success bg-opacity-10 pt-md-5 pb-md-5">
+  <div id="carouselWithCaptions2" class="carousel slide d-md-none" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"></li>
       <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="1"></li>
@@ -173,18 +175,18 @@
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselWithCaptions" role="button" data-bs-slide="prev">
+    <a class="carousel-control-prev" href="#carouselWithCaptions2" role="button" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselWithCaptions" role="button" data-bs-slide="next">
+    <a class="carousel-control-next" href="#carouselWithCaptions2" role="button" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </a>
   </div>
 </main>
 
-<fieldset class="container-fluid">
+<fieldset id="bg-plants" class="container-fluid">
 <div class="row ms-sm-5 me-sm-5 p-0">
     <div class="col-lg-6 col-md-12">
       <div class="row">
