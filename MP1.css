@@ -10,8 +10,8 @@
   
   .menu-button {
     background: rgba(255, 255, 255, 0);
-    color: rgb(237, 237, 237);
-    border: none;
+    color: rgb(118, 175, 122);
+    border: 0;
   }
   
   .menu-button:active {
@@ -78,7 +78,7 @@
   
   @media all and (max-width: 992px) {
     #register-now {
-      padding: 3em 0 3em;
+      padding: 1em 0 1em;
   }
   
     .btn-close {
