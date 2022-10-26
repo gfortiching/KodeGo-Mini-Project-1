@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf9ea;
+}
+
+nav {
+  background-color: #ecf9ea;
+}
+
+.logo {
+  width: 5em;
+}
+
+i:hover {
+  color: rgb(4, 75, 4);
+  text-shadow: 0 0 2em rgb(255, 255, 186);
+  cursor: pointer;
+}
+
+.menu-button {
+  background: rgba(255, 255, 255, 0);
+  color: rgb(118, 175, 122);
+  border: 0;
+}
+
+#register-now {
+  background-color: #23810d;
+  color: white;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-radius: 0;
+}
+
+.redeem-gift {
+  border-radius: 1.2em;
+  font-size: 1em;
+}
+
+.redeem-gift:hover {
+  box-shadow: 0 0 2em yellow;
+}
+
+.icon-gift {
+  font-size: 1.2em;
+}
+
+.bottom-icon {
+  color: white;
+}
+
+.btn-close {
+  color: white;
+}
+
+#get-started {
+  border: 0;
+}
+
+#get-started:hover {
+  color: black;
+  text-shadow: 0 0 5em black;
+  box-shadow: 0 0 3em yellow;
+}
+
+.featured {
+  background: none;
+}
+
+#search {
+  background-color: #ecf9ea;
+}
+
+.search-bar {
+  max-width: 80%;
+}
+
+@media all and (max-width: 992px) {
+  #register-now {
+    padding: 1em 0 1em;
+  }
+  .btn-close {
+    color: white;
+  }
+}/*# sourceMappingURL=MP1.css.map */
