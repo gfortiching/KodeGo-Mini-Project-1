@@ -1,9 +1,5 @@
   * {
-    box-sizing: border-box;
-  }
-
-  nav {
-    background-color: #ecf9ea;
+      box-sizing: border-box;
   }
 
   .logo {
@@ -71,12 +67,40 @@
     background: none;
   }
 
-  #search {
-    background-color: #ecf9ea;
+  .margin {
+    margin-top: 5em;
   }
-  
-  .search-bar {
-    max-width: 80%;
+
+  .parallax {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background: url(leaves.jpg) repeat fixed 100%;
+    background-size: 100%;
+    height: auto;
+  }
+
+  .parallax-inner {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .parallax-inner h2 {
+    font-family: 'Dancing Script';
+    font-size: 10vw;
+    text-align: center;
+    color: rgb(180, 254, 192);
+  }
+
+  .parallax-inner h4 {
+    font-family: 'Dancing Script';
+    font-size: 7vw;
+    text-align: center;
+    color: rgb(253, 219, 196);
+  }
+
+  #bg-plants {
+    margin-top: 3em;
+    background-color: rgb(15, 60, 15);
   }
   
   @media all and (max-width: 992px) {
