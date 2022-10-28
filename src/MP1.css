@@ -17,6 +17,12 @@
     color: rgb(118, 175, 122);
     border: 0;
   }
+
+  .navbar-text {
+    font-size: 0.8em;
+    color: rgb(10, 60, 10);
+    font-style: oblique;
+  }
   
   #register-now {
     background-color: #23810d;
@@ -42,7 +48,7 @@
   }
   
   .icon-gift {
-    font-size: 1.2em ;
+    font-size: 1.1em ;
   }
   
   .bottom-icon {
