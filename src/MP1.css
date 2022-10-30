@@ -13,19 +13,32 @@
   }
   
   .menu-button {
-    background: rgba(255, 255, 255, 0);
-    color: rgb(118, 175, 122);
+    color: rgb(64, 102, 67);
     border: 0;
+  }
+
+  .cart-button {
+    color: rgb(64, 102, 67);
+    border: 0;
+  }
+
+  .navigation {
+    background: linear-gradient(to bottom, rgba(54, 127, 54, 0.484), rgba(180, 243, 173, 0.584), rgb(254, 255, 254));
   }
 
   .navbar-text {
     font-size: 0.8em;
-    color: rgb(10, 60, 10);
+    color: rgb(3, 32, 3);
     font-style: oblique;
+    font-weight: 700;
   }
+
+  .search {
+    background: rgb(255, 255, 255);
+  } 
   
   #register-now {
-    background-color: #23810d;
+    background: linear-gradient(to right, rgb(23, 84, 17), rgba(5, 67, 9));
     color: white;
     font-size: 0.8em;
     display: flex;
@@ -36,6 +49,7 @@
     top: 0;
     z-index: 999;
     border-radius: 0;
+    overflow: visible;
   }
   
   .redeem-gift {
@@ -51,6 +65,11 @@
     font-size: 1.1em ;
   }
   
+  .icon-gift:hover {
+    color: white;
+    font-size: 1.2em;
+  }
+
   .bottom-icon {
     color: white;
   }
@@ -78,7 +97,7 @@
   }
 
   .parallax {
-    padding-top: 4em;
+    padding-top: 0.3em;
     padding-bottom: 4em;
     background: url(leaves.jpg) repeat fixed 100%;
     background-size: 100%;
@@ -86,15 +105,15 @@
   }
 
   .parallax-inner {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 3em;
+    padding-bottom: 0;
   }
 
   .parallax-inner h2 {
     font-family: 'Dancing Script';
     font-size: 10vw;
     text-align: center;
-    color: rgb(180, 254, 192);
+    color: rgb(192, 255, 186);
   }
 
   .parallax-inner h4 {
@@ -108,7 +127,62 @@
     margin-top: 3em;
     background-color: rgb(15, 60, 15);
   }
+
+  .carousel-text h5 {
+    color: black;
+  }
+
+  .carousel-text p {
+    color: black;
+  }
   
+  .card-row {
+    width: auto;
+    padding: 1em;
+  }
+
+  .card-dimensions {
+    width: auto;
+    min-height: 18em;
+  }
+
+  .socmed-icons {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 70%;
+    left: 0%;
+    margin: 0;
+    background: linear-gradient(to right, rgb(23, 84, 17), rgba(5, 67, 9, 0.397));
+    backdrop-filter: blur(1em);
+    font-family: Poppins, sans-serif;
+    padding: 1em 0 1em;
+    padding-left: 0.1em;
+    width: 3em;
+    gap: 0.2em;
+    border-radius: 0 20px 20px 0;
+    z-index: 999;
+  }
+
+  .socmed-icons button {
+    font-size: 1.5em;
+  }
+
+  .socmed-icons i {
+    color: rgb(252, 255, 253);
+    text-decoration: none;
+  }
+
+  .socmed-icons i:hover {
+    color: rgb(200, 255, 209);
+    text-decoration: none;
+  }
+
+  footer {
+    background-color: rgb(13, 92, 13);
+    height: 30em;
+  }
+
   @media all and (max-width: 992px) {
     #register-now {
       padding: 1em 0 1em;
@@ -117,4 +191,14 @@
     .btn-close {
       color: white;
   }
+  }
+
+  @media all and (max-width: 500px) {
+    .parallax-inner h2 {
+      font-size: 3.2em;
+    }
+  
+    .parallax-inner h4 {
+      font-size: 2em;
+    }
   }
