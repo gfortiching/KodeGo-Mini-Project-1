@@ -92,8 +92,8 @@
             <button class="nav-link dropdown-toggle bg-transparent border-0 navbar-text" href="#" id="navbarDropdownMenuLink" type="button" data-bs-toggle="dropdown" aria-expanded="false">Account</button>
 
               <ul class="dropdown-menu text-center text-lg-start border-0" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item navbar-text" href="#">Log In</a></li>
-                <li><a class="dropdown-item navbar-text" href="#"><i class="fa-solid fa-gift d-xl-inline pe-2"></i>Register</a></li>
+                <li><a class="dropdown-item navbar-text" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a></li>
+                <li><a class="dropdown-item navbar-text" href="#" data-bs-toggle="modal" data-bs-target="#registerModal"><i class="fa-solid fa-gift d-xl-inline pe-2"></i>Register</a></li>
               </ul>
           </li>
             
@@ -105,35 +105,52 @@
     </div>
   </nav>
 
-<!--Search Bar-->
+<!--Login Modal-->
 
-  <div class="row w-100 pt-2 pb-2 ps-2 m-0 search">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-6 m-auto">
-        <form class="d-flex justify-content-center align-items-center d-xl-flex order-3">
-          <input class="form-control m-0 h-50" placeholder="Search" aria-label="Search" required>
-          <button class="btn m-0 h-50 bg-gradient" type="submit">
-            <i class="fa-solid fa-magnifying-glass fs-4"></i>
-          </button>
-        </form>
+<form class="modal" tabindex="-1" id="loginModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title ps-3" id="modalBasicLabel">Login to your Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" aria-label="Register" placeholder="name@example.com" required>
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" minlength="8" class="form-control" id="floatingPassword" aria-label="Register" placeholder="Password" required>
+          <label for="floatingPassword">Password</label>
+        </div>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="radio" name="radioDefault" id="formRadioDefault">
+        <label class="form-check-label" for="formRadioDefault">Send SMS Verification</label>
+      </div>
+      <div class="form-check ms-4 mb-4">
+        <input class="form-check-input" type="radio" name="radioDefault" id="formRadioChecked" checked="">
+        <label class="form-check-label" for="formRadioChecked">Send Email Verification</label>
+      </div>
+      <div class="input-group w-75 m-auto mb-3">
+        <input type="text" class="form-control" placeholder="Enter One-Time Password" aria-label="OneTimePassword" aria-describedby="input-group-button-right">
+        <button type="button" class="btn btn-outline-secondary" id="input-group-button-right">Get OTP</button>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-success">Login</button>
+      </div>
     </div>
   </div>
+</form>
 
-<!--Alert-->
+<!--Register Modal-->
 
-  <alert class="alert alert-warning alert-dismissible fade show ms-lg-0 me-lg-0 m-0 text-center border-0 d-flex flex-column flex-sm-row" id="register-now" role="alert">
-    <p class="p-0 m-0 fs-5"><i class="fa-solid fa-gift align-self-center icon-gift d-sm-flex "></i></p>
-    <p class="mb-0 fs-6 ms-5 me-5 ms-sm-0 me-sm-0 d-none d-sm-flex">Register now & Get ₱150 off on 3 or more items.</p>
-    <button class="pt-1 pb-1 ps-3 pe-3 ms-5 me-5 ms-sm-0 me-sm-0 border-0 text-dark m-0 redeem-gift d-md-inline-block" id="redeem-now" data-bs-toggle="modal" data-bs-target="#mainModal"><strong><span class="d-sm-none">Register now & </span>Redeem Gift</strong></button>
-    <button type="button" class="btn-close btn-close-white p-0 mt-3 me-3" data-bs-dismiss="alert" aria-label="Close"></button>
-  </alert>
-
-<!--Modal-->
-
-  <form class="modal" tabindex="-1" id="mainModal">
-    <div class="modal-dialog">
+<form class="modal" tabindex="-1" id="registerModal">
+  <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title ps-3" id="modalBasicLabel">Register now & redeem your welcome gift!</h5>
+          <h5 class="modal-title ps-3" id="modalBasicLabel">Register for an Account</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -149,9 +166,73 @@
             <input type="number" minlength="13" class="form-control" id="floatingNumber" aria-label="Register" placeholder="Number" required>
             <label for="floatingNumber">Mobile Number (+63)</label>
           </div>
+          <div class="form-control border-0">
+        </div>
+
+        <div class="form-check ms-4">
+          <input class="form-check-input" type="radio" name="radioDefault" id="formRadioDefault">
+          <label class="form-check-label" for="formRadioDefault">Send SMS Verification</label>
+        </div>
+        <div class="form-check ms-4 mb-4">
+          <input class="form-check-input" type="radio" name="radioDefault" id="formRadioChecked" checked="">
+          <label class="form-check-label" for="formRadioChecked">Send Email Verification</label>
+        </div>
+        <div class="input-group w-75 m-auto mb-3">
+          <input type="text" class="form-control" placeholder="Enter One-Time Password" aria-label="OneTimePassword" aria-describedby="input-group-button-right">
+          <button type="button" class="btn btn-outline-secondary" id="input-group-button-right">Get OTP</button>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<!--Search Bar-->
+
+  <section class="row w-100 pt-2 pb-2 ps-2 m-0 search">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-6 m-auto">
+        <form class="d-flex justify-content-center align-items-center d-xl-flex order-3">
+          <input class="form-control m-0 h-50" placeholder="Search" aria-label="Search" required>
+          <button class="btn m-0 h-50 bg-gradient" type="submit">
+            <i class="fa-solid fa-magnifying-glass fs-4"></i>
+          </button>
+        </form>
+    </div>
+  </section>
+
+<!--Alert-->
+
+  <alert class="alert alert-warning alert-dismissible fade show ms-lg-0 me-lg-0 m-0 text-center border-0 d-flex flex-column flex-sm-row" id="register-now" role="alert">
+    <p class="p-0 m-0 fs-5"><i class="fa-solid fa-gift align-self-center icon-gift d-sm-flex "></i></p>
+    <p class="mb-0 fs-6 ms-5 me-5 ms-sm-0 me-sm-0 d-none d-sm-flex">Register now & Get ₱150 off on 3 or more items.</p>
+    <button class="pt-1 pb-1 ps-3 pe-3 ms-5 me-5 ms-sm-0 me-sm-0 border-0 text-dark m-0 redeem-gift d-md-inline-block" id="redeem-now" data-bs-toggle="modal" data-bs-target="#mainModal"><strong><span class="d-sm-none">Register now & </span>Redeem Gift</strong></button>
+    <button type="button" class="btn-close btn-close-white p-0 mt-3 me-3" data-bs-dismiss="alert" aria-label="Close"></button>
+  </alert>
+
+<!--Alert Modal-->
+
+  <form class="modal" tabindex="-1" id="mainModal"> 
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title ps-3 text-center" id="modalBasicLabel">Register now with a Valid I.D. to redeem your welcome gift!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" aria-label="Register" placeholder="name@example.com" required>
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" minlength="8" class="form-control" id="floatingPassword" aria-label="Register" placeholder="Password" required>
+            <label for="floatingPassword">New Password</label>
+          </div>
           <div class="form-floating mb-4">
-            <input type="text" class="form-control" id="floatingNumber" aria-label="Register" placeholder="Address" required>
-            <label for="floatingNumber">Address</label>
+            <input type="number" minlength="13" class="form-control" id="floatingNumber" aria-label="Register" placeholder="Number" required>
+            <label for="floatingNumber">Mobile Number (+63)</label>
           </div>
           <div class="form-control border-0">
             <p class="ps-2 fs-6">Upgrade account by uploading your Valid ID</p>
@@ -159,8 +240,22 @@
             <label for="formFile" class="form-label"></label>
           </div>
         </div>
+
+        <div class="form-check ms-4">
+          <input class="form-check-input" type="radio" name="radioDefault" id="formRadioDefault">
+          <label class="form-check-label" for="formRadioDefault">Send SMS Verification</label>
+        </div>
+        <div class="form-check ms-4 mb-4">
+          <input class="form-check-input" type="radio" name="radioDefault" id="formRadioChecked" checked="">
+          <label class="form-check-label" for="formRadioChecked">Send Email Verification</label>
+        </div>
+        <div class="input-group w-75 m-auto mb-3">
+          <input type="text" class="form-control" placeholder="Enter One-Time Password" aria-label="OneTimePassword" aria-describedby="input-group-button-right">
+          <button type="button" class="btn btn-outline-secondary" id="input-group-button-right">Get OTP</button>
+        </div>
+
         <div class="modal-footer">
-          <button type="submit" class="btn btn-primary">Register</button>
+          <button type="submit" class="btn btn-success">Register</button>
         </div>
       </div>
     </div>
@@ -168,7 +263,7 @@
   
 <header class="container-fluid parallax">
 
-<div class="margin"></div>
+<hr class="margin">
 
 <!--Carousel (Tablet/Laptop)-->
 
@@ -256,7 +351,7 @@
   </div>
 </section>
 
-<div class="margin"></div>
+<hr class="margin">
 
 <!--Subscribe to Emails-->
 
@@ -282,7 +377,7 @@
 
 <!--Social Media-->
 
-<div class="socmed-icons d-none d-sm-flex">
+<div class="socmed-icons d-sm-flex">
   <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Follow us on Facebook!">
       <a href="https://web.facebook.com/gfortiching/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
   </button>
@@ -291,9 +386,6 @@
   </button>
   <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Check us out on Pinterest!">
     <a href="#" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-  </button>
-  <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Follow us out on Twiter!">
-    <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
   </button>
 </div>
 
@@ -341,14 +433,14 @@
     </div>
   </div>
 
-<div class="margin"></div>
+<hr class="margin">
 
 <!--Blog-->
 
 <h1 class="mt-1 text-center text-black">The <em>Roots & Tools</em> Blog</h1>
 
 <!--Our Company-->
-<div class="margin"></div>
+<hr class="margin">
 <h1 class="text-center mb-5">Our Company</h1>
 <fieldset class="container gap-5 company-flex">
   <article class="company-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero itaque incidunt dignissimos animi saepe optio quis, atque illo a iure vel molestias cumque delectus sunt consectetur nisi earum corporis quas?</article>
@@ -357,77 +449,78 @@
   <article class="company-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsum deserunt vero, consequuntur perspiciatis amet dolore sed. Ullam unde expedita voluptas, quibusdam odio provident! Eaque sapiente quidem delectus provident? Tempora?</article>
 </fieldset>
 
-<!--Our Partners-->
-<div class="margin"></div>
+<hr class="margin">
 
-<div class="row m-auto p-3 p-md-5 container-fluid">
-  <div class="col-12 col-md-6 ps-5 pe-5 ">
-      <div class="partners-caption">
+<!--Our Partners-->
+
+<section class="row m-auto p-3 p-md-5 container-fluid">
+  <div class="col-12 col-md-6 ps-2 pe-2 ps-sm-5 pe-sm-5 ps-md-4 pe-md-4 ps-lg-5 pe-lg-5">
+    <div class="partners-caption">
         <h1>Our Partners</h1>
         <br>
         <h5>Roots & Tools is working with the online payment platforms and logistics services you know and trust to give you unlimited options.</h5>
         <br>
         <h5>Whatever your need – payment safety, online security, or fast delivery – our business can deliver.</h5>
-      </div>
+    </div>
   </div>
   <div class="col-12 col-md-6 pt-5 pt-md-0">
-        <div class="row">
-          <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
-            <div class="bg-transparent w-auto h-auto">
+     <div class="row">
+       <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
+         <div class="bg-transparent w-auto h-auto">
               <img class="partners" src="https://www.manilatimes.net/manilatimes/uploads/images/2022/06/07/78091.jpg">
-            </div>
-          </div>
-          <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
-            <div class="bg-transparent w-auto h-auto">
+        </div>
+      </div>
+       <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
+         <div class="bg-transparent w-auto h-auto">
               <img class="partners" src="https://prod-coins-landing.s3.ap-southeast-1.amazonaws.com/coins-landing/favicon_42b1136f5c.png">
-            </div>
-          </div>
-          <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
-            <div class="bg-transparent w-auto h-auto">
+        </div>
+      </div>
+       <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
+         <div class="bg-transparent w-auto h-auto">
               <img class="partners" src="https://play-lh.googleusercontent.com/MYVxoAAKgx1buBB-jn-U1wb8iUguAKwWH6EtfdT6l-zA_xqw2bxbHvycs25RXt9NZR4">
-            </div>
-          </div>
         </div>
+      </div>
+    </div>
         
-        <div class="row">
-          <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
-            <div class="bg-transparent w-auto h-auto">
+     <div class="row">
+       <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
+         <div class="bg-transparent w-auto h-auto">
               <img class="partners" src="https://www.pngitem.com/pimgs/m/388-3884399_paypal-png-transparent-image-paypal-square-logo-png.png">
-            </div>
-          </div>
-          <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
-            <div class="bg-transparent w-auto h-auto">
+        </div>
+      </div>
+       <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
+         <div class="bg-transparent w-auto h-auto">
               <img class="partners" src="http://images.gmanews.tv/webpics/2020/01/unionbank_2020_01_27_11_43_59.jpg">
-            </div>
-          </div>
-          <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
-            <div class="bg-transparent w-auto h-auto">
+        </div>
+      </div>
+       <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
+         <div class="bg-transparent w-auto h-auto">
               <img class="partners" src="https://i.etsystatic.com/26221185/r/il/b2aa11/3668007451/il_fullxfull.3668007451_2aef.jpg">
-            </div>
-          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="row">
-          <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
-            <div class="bg-transparent w-auto h-auto">
+     <div class="row">
+       <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
+         <div class="bg-transparent w-auto h-auto">
               <img class="partners" src="https://upload.wikimedia.org/wikipedia/commons/3/32/Logo_With_Tagline_J%26T_-_Square-03.png">
-            </div>
-          </div>
-          <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
-            <div class="bg-transparent w-auto h-auto">
-              <img class="partners" src="https://interbrand.com/wp-content/uploads/2020/10/accenture-square.png">
-            </div>
-          </div>
-          <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
-            <div class="bg-transparent w-auto h-auto">
-              <img class="partners" src="https://public.bnbstatic.com/20190405/eb2349c3-b2f8-4a93-a286-8f86a62ea9d8.png">
-            </div>
-          </div>
         </div>
+      </div>
+       <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
+         <div class="bg-transparent w-auto h-auto">
+              <img class="partners" src="https://interbrand.com/wp-content/uploads/2020/10/accenture-square.png">
+        </div>
+      </div>
+       <div class="col-4 pt-1 pt-md-3 d-flex justify-content-center">
+         <div class="bg-transparent w-auto h-auto">
+              <img class="partners" src="https://public.bnbstatic.com/20190405/eb2349c3-b2f8-4a93-a286-8f86a62ea9d8.png">
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="margin"></div>
+<hr class="margin">
 
 <!--Accordion-->
 <h3 class="mt-1 text-center text-black ps-5">Frequently Asked Questions</h3>
@@ -471,7 +564,7 @@
     </div>
   </div>
 
-<div class="margin"></div>
+<hr class="margin">
 
 <!--Footer-->
 
@@ -484,6 +577,8 @@
     </div>
   </div>
 </footer>
+
+<!--Bootstrap CSS and JavaScript-->
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.emd.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
