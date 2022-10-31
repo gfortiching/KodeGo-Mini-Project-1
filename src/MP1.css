@@ -150,15 +150,13 @@
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 70%;
+    top: 65%;
     left: 0%;
     margin: 0;
     background: linear-gradient(to right, rgb(23, 84, 17), rgba(5, 67, 9, 0.397));
     backdrop-filter: blur(1em);
     font-family: Poppins, sans-serif;
-    padding: 1em 0 1em;
-    padding-left: 0.1em;
-    width: 3em;
+    width: 2.9em;
     gap: 0.2em;
     border-radius: 0 20px 20px 0;
     z-index: 999;
@@ -176,11 +174,42 @@
   .socmed-icons i:hover {
     color: rgb(200, 255, 209);
     text-decoration: none;
+  } 
+
+  .company-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4rem;
+  }
+
+  .company-text {
+    /* display: flex;
+    flex-direction: column; */
+    margin: 0 auto;
+    width: 15em;
+    padding: 1.5em;
+    text-align: center;
+    background-color: rgb(254, 254, 254);
+    box-shadow: 10px 10px 50px rgba(25, 92, 8, 0.495);
+}
+
+  .partners-caption {
+    padding-top: 1em;
+  }
+
+  .partners {
+    width: 11vw;
+    height: auto;
+    border-color: green;
+    border: 0.1em solid rgba(0, 128, 0, 0.396);
+    padding: 0.5em;
+    border-radius: 25px;
   }
 
   footer {
-    background-color: rgb(13, 92, 13);
-    height: 30em;
+    background-color: rgb(205, 226, 205);
+    height: 20em;
   }
 
   @media all and (max-width: 992px) {
@@ -191,6 +220,17 @@
     .btn-close {
       color: white;
   }
+  }
+
+  @media all and (max-width: 768px) {
+    .partners {
+      width: 6em;
+      height: auto;
+      border-color: green;
+      border: 0.1em solid rgba(0, 128, 0, 0.396);
+      padding: 0.1em;
+      border-radius: 25px;
+    }
   }
 
   @media all and (max-width: 500px) {
