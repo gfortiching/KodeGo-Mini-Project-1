@@ -286,7 +286,18 @@
 
   footer {
     background-color: rgb(205, 226, 205);
-    height: 20em;
+    height: auto;
+  }
+
+  .footer-logo {
+    margin: 1em auto;
+    width: 5em;
+    height: 5em;
+  }
+
+  .footer-list {
+    margin-top: 3em;
+    list-style: none;
   }
 
   @media all and (max-width: 992px) {
