@@ -2,6 +2,18 @@
       box-sizing: border-box;
   }
 
+  .lato {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+
+  .price {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
 /*Navigation Section*/
 
   .logo {
@@ -20,7 +32,7 @@
   }
 
   .cart-button {
-    color: rgb(64, 102, 67);
+    color: rgb(54, 89, 57);
     border: 0;
   }
 
@@ -30,9 +42,12 @@
 
   .navbar-text {
     font-size: 0.8em;
-    color: rgb(0, 0, 0);
+    font-weight: 600;
     font-style: italic;
-    font-weight: 700;
+  }
+
+  .li-text {
+    font-size: 0.9em;
   }
 
   .search {
@@ -53,7 +68,6 @@
     top: 0;
     z-index: 999;
     border-radius: 0;
-    overflow: visible;
   }
   
   .redeem-gift {
@@ -83,14 +97,14 @@
   .margin {
     margin-top: 3em;
     margin-bottom: 3em;
-    /* border: 0; */
+    border: 0;
   }
 
 /*Carousel*/
 
   .parallax {
-    padding-top: 0.3em;
-    padding-bottom: 4em;
+    padding-top: 3em;
+    padding-bottom: 5em;
     background: url(leaves.jpg) repeat fixed 100%;
     background-size: 100%;
     height: auto;
@@ -121,10 +135,21 @@
   }
 
   .carousel-text h5 {
-    color: black;
+    color: rgba(30, 79, 24, 0.695);
+    font-size: 2vw;
   }
 
-  .carousel-text p {
+  .carousel-text button {
+    background-color: rgb(13, 62, 13);
+    color: rgb(255, 255, 255);
+    border-radius: 1.5em;
+    border: 0;
+    padding: 0.3em 1em;
+    font-size: 1.2em;
+  }
+
+  .carousel-text button:hover {
+    background-color: rgb(202, 244, 192);
     color: black;
   }
   
@@ -140,13 +165,18 @@
     min-height: 18em;
   }
 
+  .card-effect:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2em green;
+  }
+
 /*Social Media side-bar*/
 
   .socmed-icons {
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 24%;
+    top: 70%;
     left: 0%;
     margin: 0;
     background: linear-gradient(to right, rgb(23, 84, 17), rgba(5, 67, 9, 0.397));
@@ -199,12 +229,57 @@
   }
 
   .partners {
+    background: white;
     width: 11vw;
     height: auto;
     border-color: green;
     border: 0.1em solid rgba(0, 128, 0, 0.396);
     padding: 0.5em;
     border-radius: 25px;
+  }
+
+  .product {
+    width: 1em;
+  }
+
+  .view-spray {
+    background-color: rgb(64, 209, 64);
+    font-weight: 700;
+    border-radius: 1.4em;
+    border: 0;
+    padding: 0.5em 1.6em;
+    cursor: pointer;
+  }
+
+  .view-spray:hover {
+    background-color: yellow;
+    font-weight: 700;
+  }
+
+  .nav-pills {
+    margin-right: 10em;
+  }
+
+  .parallax2 {
+    padding-top: 0.4em;
+    padding-bottom: 4em;
+    background: url(leaves2.jpg) repeat fixed 100%;
+    background-size: 100%;
+    height: auto;
+  }
+
+  .parallax-about {
+    opacity: 0.9;
+    border-radius: 2em;
+  }
+
+  .read-blog {
+    border-radius: 1.2em;
+    padding: 0 1em;
+  }
+
+  .blog-img {
+    width: 2em;
   }
 
 /*Footer Section*/
@@ -242,5 +317,26 @@
   
     .parallax-inner h4 {
       font-size: 2em;
+    }
+
+    .star-icon {
+      font-size: 0.9em;
+      
+    }
+
+    .card-title {
+      font-size: 1.2em;
+    }
+  }
+
+  @media all and (max-width: 319px) {
+
+    .star-icon {
+      font-size: 0.7em;
+      
+    }
+
+    .card-title {
+      font-size: 1em;
     }
   }
