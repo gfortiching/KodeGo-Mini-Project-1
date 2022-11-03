@@ -2,18 +2,6 @@
       box-sizing: border-box;
   }
 
-  .lato {
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-  }
-
-  .price {
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-  }
-
 /*Navigation Section*/
 
   .logo {
@@ -111,7 +99,7 @@
   }
 
   .parallax-inner {
-    padding-top: 3em;
+    padding-top: 5em;
     padding-bottom: 0;
   }
 
@@ -152,8 +140,111 @@
     background-color: rgb(202, 244, 192);
     color: black;
   }
+
+  .carousel-mobile-text {
+    font-size: 3vw;
+  }
+
+  /*Featured Services*/
+
+  .services-button {
+    border-radius: 1em;
+    padding: 0.4em 1.4em;
+    border: 0;
+    background-color: rgb(9, 103, 9);
+    color: white;
+  }
+
+  .services-button:hover {
+    background-color: rgb(202, 244, 192);
+    color: black;
+  }
+
+  .card-dimensions-services {
+    width: auto;
+    min-height: 18em;
+    box-shadow: 1em 1em 2em rgb(5, 66, 5);
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s ease-in-out;
+  }
+
+  .card-dimensions-services:hover {
+    cursor: pointer;
+    box-shadow: 0 1em 2em rgb(65, 158, 65);
+    background: rgb(255, 255, 255);
+    border: 0;
+    transform: translateY(0.5em);
+  }
+
+  .card-dimensions-services:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(9, 48, 3), rgba(255, 224, 184, 0.227));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+  }
+
+  .card-dimensions-services:hover:before {
+    opacity: 1;
+  }
+
+  .card-info-services  {
+    text-align: center;
+    padding: 2em;
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+  }
+
+  .card:hover .card-info-services {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+
+  .card-info-services button {
+    border: 0;
+    background-color: rgb(32, 129, 32);
+    color: white;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+  }
+
+  .card-info-services button:hover {
+    border: 0;
+    background-color: rgb(125, 217, 125);
+    color: rgb(0, 0, 0);
+    border-radius: 1em;
+    padding: 0.5em 1em;
+  }
   
 /*Featured Products*/
+
+.lato {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.price {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+  .spray-icon {
+    width: 3em;
+    height: 3em;
+  }
 
   .card-row {
     width: auto;
@@ -161,13 +252,76 @@
   }
 
   .card-dimensions {
-    width: auto;
-    min-height: 18em;
+    box-shadow: 1em 1em 2em rgb(5, 66, 5);
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s ease-in-out;
   }
 
-  .card-effect:hover {
+  .card-dimensions:hover {
     cursor: pointer;
-    box-shadow: 0 0 2em green;
+    box-shadow: 1em 1em 2em rgb(65, 158, 65);
+    background: rgb(255, 255, 255);
+    border: 0;
+    transform: translateY(0.5em);
+  }
+
+  .card-dimensions:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(8, 64, 3), rgba(255, 218, 224, 0.227));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+  }
+
+  .card-dimensions:hover:before {
+    opacity: 1;
+  }
+
+  .card-info  {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+  }
+
+  .card:hover .card-info {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+
+  .card-info button {
+    border: 0;
+    background-color: rgb(65, 177, 65);
+    color: white;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+  }
+
+  .card-info button:hover {
+    border: 0;
+    background-color: rgb(125, 217, 125);
+    color: rgb(0, 0, 0);
+    border-radius: 1em;
+    padding: 0.5em 1em;
+  }
+  
+/**Img class**/
+
+  .product {
+    width: 1em;
   }
 
 /*Social Media side-bar*/
@@ -204,23 +358,83 @@
 
 /*Our Company*/
 
+  .company-icon {
+    width: 5em;
+    margin: 0 auto;
+  }
+
+  .our-company {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    margin-bottom: 0;
+  }
+
   .company-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .company-text {
-    /* display: flex;
-    flex-direction: column; */
     margin: 0 auto;
-    width: 15em;
+    width: 10em;
     padding: 1.5em;
     text-align: center;
-    background-color: rgb(254, 254, 254);
-    box-shadow: 10px 10px 50px rgba(25, 92, 8, 0.495);
-}
+    color: white;
+  }
+
+  .card-dimensions-company {
+    width: auto;
+    min-height: 18em;
+    /* box-shadow: 1em 1em 2em rgb(5, 66, 5); */
+    overflow: hidden;
+    position: relative;
+    transition: 1s ease-in-out;
+  }
+
+  .card-dimensions-company:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2em rgb(65, 158, 65);
+    /* background: rgb(255, 255, 255); */
+    border: 0;
+    transform: translateY(0.5em);
+  }
+
+  .card-dimensions-company:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(192, 255, 192), rgba(255, 252, 249, 0.833));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+  }
+
+  .card-dimensions-company:hover:before {
+    opacity: 1;
+  }
+
+  .card-info-company  {
+    text-align: center;
+    padding: 2em;
+    position: absolute;
+    z-index: 3;
+    color: rgb(0, 1, 0);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+  }
+
+  .card:hover .card-info-company {
+    opacity: 1;
+    transform: translateY(0px)
+  }
 
 /*Our Partners*/
 
@@ -230,7 +444,7 @@
 
   .partners {
     background: white;
-    width: 11vw;
+    width: 5em;
     height: auto;
     border-color: green;
     border: 0.1em solid rgba(0, 128, 0, 0.396);
@@ -238,11 +452,7 @@
     border-radius: 25px;
   }
 
-  .product {
-    width: 1em;
-  }
-
-  .view-spray {
+  .view-more {
     background-color: rgb(64, 209, 64);
     font-weight: 700;
     border-radius: 1.4em;
@@ -251,7 +461,7 @@
     cursor: pointer;
   }
 
-  .view-spray:hover {
+  .view-more:hover {
     background-color: yellow;
     font-weight: 700;
   }
@@ -269,13 +479,16 @@
   }
 
   .parallax-about {
-    opacity: 0.9;
     border-radius: 2em;
   }
 
   .read-blog {
     border-radius: 1.2em;
     padding: 0 1em;
+  }
+
+  .read-blog:hover {
+    color: white;
   }
 
   .blog-img {
@@ -285,9 +498,10 @@
 /*Footer Section*/
 
   footer {
-    background-color: rgb(205, 226, 205);
     height: auto;
-  }
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+  }   
 
   .footer-logo {
     margin: 1em auto;
@@ -298,6 +512,15 @@
   .footer-list {
     margin-top: 3em;
     list-style: none;
+  }
+
+  .footer-anchor {
+    color: rgb(2, 23, 2);
+    text-decoration: none;
+  }
+
+  .footer-anchor:hover {
+    color: rgb(46, 161, 46);
   }
 
   @media all and (max-width: 992px) {
@@ -312,11 +535,11 @@
 
   @media all and (max-width: 768px) {
     .partners {
-      width: 6em;
+      width: 4em;
       height: auto;
       border-color: green;
       border: 0.1em solid rgba(0, 128, 0, 0.396);
-      padding: 0.1em;
+      padding: 0.5em;
       border-radius: 25px;
     }
   }
