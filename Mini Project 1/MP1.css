@@ -36,7 +36,6 @@
   .navbar-text {
     font-size: 0.8em;
     font-weight: 600;
-    font-style: italic;
   }
 
   .li-text {
@@ -503,7 +502,7 @@
 
   footer {
     height: auto;
-    padding-top: 0.2em;
+    padding-top: 0;
     padding-bottom: 1em;
   }   
 
