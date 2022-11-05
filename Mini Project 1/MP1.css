@@ -33,9 +33,18 @@
     background: white;
   }
 
+  .nav-bg {
+    background: linear-gradient(to bottom, rgb(231, 242, 230), rgba(255, 255, 255), rgba(255, 255, 255, 0.76));
+  }
+
   .navbar-text {
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 600;
+    color: black;
+  }
+
+  .navbar-text:hover {
+    color: rgb(70, 186, 70);
   }
 
   .li-text {
@@ -56,8 +65,6 @@
     justify-content: center;
     align-content: center;
     gap: 1em;
-    position: sticky;
-    top: 0;
     z-index: 999;
     border-radius: 0;
   }
@@ -121,22 +128,12 @@
     color: rgb(253, 219, 196);
   }
 
-  #bg-plants {
-    margin-top: 3em;
-    background-color: rgb(15, 60, 15);
-  }
-
-  .carousel-text h5 {
-    color: rgba(30, 79, 24, 0.695);
-    font-size: 2vw;
-  }
-
   .carousel-text button {
-    background-color: rgb(13, 62, 13);
+    background-color: rgb(60, 138, 60);
     color: rgb(255, 255, 255);
     border-radius: 1.5em;
     border: 0;
-    padding: 0.3em 1em;
+    padding: 0.3em 1em 0.5em;
     font-size: 1.2em;
   }
 
@@ -238,21 +235,21 @@
     flex-direction: column;
     position: sticky;
     float: left;
-    top: 60%;
-    left: 0%;
+    top: 66%;
     margin: 0;
     background: linear-gradient(to right, rgb(23, 84, 17), rgba(5, 67, 9, 0.397));
     background-color: green;
     backdrop-filter: blur(1em);
     font-family: Poppins, sans-serif;
-    width: 2.8em;
+    width: 3em;
     gap: 0.2em;
     border-radius: 0 20px 20px 0;
     z-index: 999;
   }
 
   .socmed-icons button {
-    font-size: 1.5em;
+    padding: 0.3em 0 0.3em;
+    font-size: 1.4em;
   }
 
   .socmed-icons i {
@@ -325,7 +322,7 @@
   .card-info  {
     width: 100%;
     text-align: center;
-    padding: 1em;
+    padding: 1.2em;
     position: absolute;
     z-index: 3;
     color: #fff;
@@ -461,6 +458,7 @@
 
   .view-more {
     background-color: rgb(64, 209, 64);
+    color: black;
     font-weight: 700;
     border-radius: 1.4em;
     border: 0;
@@ -469,7 +467,8 @@
   }
 
   .view-more:hover {
-    background-color: yellow;
+    background-color: rgb(17, 73, 28);
+    color: #fff;
     font-weight: 700;
   }
 
@@ -491,7 +490,8 @@
 
   .read-blog {
     border-radius: 1.2em;
-    padding: 0 1em;
+    padding: 0.5em 1em;
+
   }
 
   .read-blog:hover {
