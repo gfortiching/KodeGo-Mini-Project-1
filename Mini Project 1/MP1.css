@@ -3,14 +3,23 @@
   }
 
   main {
-    background: linear-gradient(to bottom, rgb(217, 242, 214), rgb(255, 237, 246), rgba(53, 139, 63, 0.384));
+    background: linear-gradient(to bottom, rgb(217, 242, 214), rgb(255, 237, 246), rgb(217, 242, 214));
     padding-bottom: 4em;
+  }
+
+  .blog-bg {
+    background: linear-gradient(to bottom, rgb(217, 242, 214), rgb(255, 237, 246), rgb(217, 242, 214));
+  }
+
+  .toast {
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
 /*Navigation Section*/
 
   .logo {
-    width: 5em;
+    width: 4em;
   }
   
   i:hover {
@@ -235,13 +244,13 @@
     flex-direction: column;
     position: sticky;
     float: left;
-    top: 66%;
+    top: 67%;
     margin: 0;
     background: linear-gradient(to right, rgb(23, 84, 17), rgba(5, 67, 9, 0.397));
     background-color: green;
     backdrop-filter: blur(1em);
     font-family: Poppins, sans-serif;
-    width: 3em;
+    width: 2.8em;
     gap: 0.2em;
     border-radius: 0 20px 20px 0;
     z-index: 999;
@@ -440,6 +449,7 @@
     transform: translateY(0px)
   }
 
+
 /*Our Partners*/
 
   .partners-caption {
@@ -477,20 +487,16 @@
   }
 
   .parallax2 {
-    padding-top: 0.4em;
-    padding-bottom: 4em;
+    padding-top: 3em;
+    padding-bottom: 5em;
     background: url(leaves2.jpg) repeat fixed 100%;
     background-size: 100%;
     height: auto;
   }
 
-  .parallax-about {
-    border-radius: 2em;
-  }
-
   .read-blog {
     border-radius: 1.2em;
-    padding: 0.5em 1em;
+    padding: 0.3em 1em;
 
   }
 
@@ -547,7 +553,7 @@
     }
   }
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 576px) {
     .parallax-inner h2 {
       font-size: 3.2em;
     }
