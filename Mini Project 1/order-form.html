@@ -13,66 +13,62 @@
     <title>Product - Roots & Tools</title>
     <style>
 
-      main {
-        padding-left: 10vw;
-        padding-right: 10vw;
-        background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(181, 248, 176), rgb(255, 225, 244), rgb(255, 255, 255));
-      }
+            form {
+                color: black;
+                max-width: 600px;
+                min-width: 300px;
+                margin: 0 auto;
+                padding-bottom: 3em;
+                padding-top: 3em;
+            }
+            
+            label {
+                display: block;
+                margin: 8px;
+            }
+            
+            input,
+            textarea,
+            select {
+                margin: 10px 0 0 0;
+                width: 100%;
+                min-height: 2em;
+            }
+            
+            input, textarea {
+                background-color: #ffffff;
+                border: 1px solid #000000;
+                color: #000000;
+            }
 
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+            textarea {
+                padding-bottom: 30px;
+            }
+            
+            /**Submit Button**/
 
-      .small-container {
-        box-shadow: 0 0 2em green;
-        border-radius: 2em;
-      }
+            input[type="submit"] {
+                display: block;
+                font-size: 1.1rem;
+                background-color: #195323;
+                color: white;
+                border-color: white;
+                padding: 15px;
+                border-radius: 20px;
+            }
+            
+            input[type="file"] {
+                padding: 1px 2px;
+            }
 
-      .small-img-row {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 0.3em;
-      }
-
-      .small-img-col {
-        cursor: pointer;
-      }
-
-      .single-product select {
-        display: block;
-        padding: 0 1em;
-        width: 10em;
-        margin-bottom: 0.5em;
-      }
-
-      .single-product input {
-        border: 1px solid green;
-        width: 3em;
-      }
-
-      .fa {
-        color: rgb(192, 143, 152);
-        margin-left: 10px;
-      }
-
-      .button {
-        display: inline-block;
-        background: rgb(33, 172, 33);
-        color: white;
-        padding: 8px 30px;
-        margin: 10px 0;
-        border-radius: 30px;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-      }
-
-      .button:hover {
-        background: rgb(80, 255, 80);
-        color: black;
-      }
-
+            input[type="submit"]:hover {
+                cursor: pointer;
+                background-color: #e9c68e;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
     </style>
 </head>
 
@@ -205,7 +201,7 @@
     </div>
   </form>
   
-  <!--Register Modal-->
+<!--Register Modal-->
   
   <form class="modal" tabindex="-1" id="registerModal">
     <div class="modal-dialog">
@@ -251,85 +247,25 @@
     </div>
   </form>
   
-<!--Search Bar-->
-
-  <section class="row w-100 pt-2 pb-2 ps-2 m-0 search">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-6 m-auto">
-        <form class="d-flex justify-content-center align-items-center d-xl-flex order-3">
-          <input class="form-control m-0 h-50" placeholder="Search" aria-label="Search" required>
-          <button class="btn m-0 h-50 bg-gradient" type="submit">
-            <i class="fa-solid fa-magnifying-glass fs-4"></i>
-          </button>
-        </form>
-    </div>
-  </section>
-
-<main class="main">
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-5 mt-5">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-black m-0">Home</a></li>
-      <li class="breadcrumb-item"><a href="products-1-spray.html" class="text-decoration-none text-black">Plant Care Sprays</a></li>
-      <li class="breadcrumb-item"><a href="products-1-spray.html" class="text-decoration-none text-black m-0">Organic Pest Killer</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Pest Killer</li>
-    </ol>
-  </nav>
-  
-  <div class="row small-container single-product p-2 pt-4 p-sm-5">
-      <div class="col w-100 d-flex flex-column">
-        <img src="product1.png">
-        <div class="small-img-row w-auto gap-2">
-          <div class="small-img-col">
-            <img src="product1a.png" class="small-img w-100">
-          </div>
-          <div class="small-img-col">
-            <img src="product1b.png" class="small-img w-100">
-          </div>
-          <div class="small-img-col">
-            <img src="product1a.png" class="small-img w-100">
-          </div>
-          <div class="small-img-col">
-            <img src="product1b.png" class="small-img w-100">
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <h2 class="pt-3 ">Pest Killer</h2>
-        <h4>₱120</h4>
-        <caption class="mb-5">Size</caption>
-          <select>
-            <option>Select Size:</option>
-            <option>250 mg</option>
-            <option>500 mg</option>
-            <option>750 mg</option>
-            <option>1 kg</option>
-          </select>
-        <caption class="mb-5">Color</caption>
-          <select>
-            <option>Select Color:</option>
-            <option>White</option>
-            <option>Black</option>
-            <option>Gold</option>
-            <option>Green</option>
-            <option>Pink</option>
-          </select>
-        <caption class="mb-5">Amount</caption>
-        <br>
-        <input type="number" value="1">
-        <br>
-        <a href="cart.html" class="button mt-3 mb-3">Add to Cart</a>
-        <div class="d-none d-lg-block">
-          <h4 class="mb-3">Product Details</h4>
-          <p>The Pest Killer product is best for preventing pests from destroying your plants.</p>
-        </div>
-    </div>
-    <div class="d-lg-none">
-      <h4 class="mt-3 mb-3">Product Details</h4>
-      <p>The Pest Killer product is best for preventing pests from destroying your plants.</p>
-    </div>
-  </div>
-
-</main>
+<!--Order Form-->
+        <form>
+            <h2>Shipping Details</h2>
+            <label id="name-label">Name <input id="name" type="text" placeholder="Enter your full name" required /></label>
+            <label id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" required /></label>
+            <label id="number-label">Contact Number<input id="number" type="text" minlength="11" placeholder="Enter your contact number" required /></label>
+            <label id="address-label">Shipping Details <input id="address" type="text" placeholder="Enter your shipping address" required /></label>
+    
+            <label for="dropdown">Delivery Options
+            <select id="dropdown">
+                <option value=""></option>
+                <option value="1">Pick-Up</option>
+                <option value="2">Standard Delivery (5-7 day plus shipping fee)</option>
+                <option value="3">Express Delivery (3-4 days plus express fee)</option>
+            </select>
+            </label>  
+            <label>Do you have any shipping requests?</label><textarea placeholder="Enter landmark or requests for delivery"></textarea>
+            <input id="submit" type="submit" value="Order Now!" />
+        </form> 
 
 <!--Footer-->
 
