@@ -383,18 +383,18 @@
 
   .company-flex {
     display: flex;
+    text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
   }
 
   .company-text {
     margin: 0 auto;
-    text-align: center;
     color: white;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 4em;
+    padding-right: 4em;
     padding-bottom: 1em;
   }
 
