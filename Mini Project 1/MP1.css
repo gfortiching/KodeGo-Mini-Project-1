@@ -111,7 +111,7 @@
 /*Carousel*/
 
   .parallax {
-    padding-top: 3em;
+    padding-top: 0;
     padding-bottom: 5em;
     background: url(leaves.jpg) repeat fixed 100%;
     background-size: 100%;
@@ -120,7 +120,7 @@
 
   .parallax-inner {
     padding-top: 5em;
-    padding-bottom: 0;
+    padding-bottom: 5em;
   }
 
   .parallax-inner h2 {
@@ -132,7 +132,7 @@
 
   .parallax-inner h4 {
     font-family: 'Dancing Script';
-    font-size: 7vw;
+    font-size: 8vw;
     text-align: center;
     color: rgb(253, 219, 196);
   }
@@ -502,6 +502,11 @@
 
   .read-blog:hover {
     color: white;
+  }
+  .logo2 {
+    width: 8em;
+    margin-bottom: 2em;
+    border-radius: 50%;
   }
 
 /*Footer Section*/
