@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="MP1.css">
     <link rel="stylesheet" href="Bootstrap 5.2.2/css/bootstrap.css">
-    <script src="https://kit.fontawesome.com/b8b5c0695c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato&display=swap" rel="stylesheet">
@@ -93,7 +92,7 @@
             <button class="nav-link dropdown-toggle bg-transparent border-0 text-black" href="#" id="navbarDropdownMenuLink" type="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</button>
   
             <ul class="dropdown-menu text-center border-0" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item li-text" href="#">Be Our Partner</a></li>
+              <li><a class="dropdown-item li-text" href="#">FAQs</a></li>
               <li><a class="dropdown-item li-text" href="#">Our Company Values</a></li>
             </ul>
           </li>
@@ -103,95 +102,95 @@
     </div>
   </nav>
 
-<!--Login Modal-->
+  <!--Login Modal-->
 
-<form class="modal" tabindex="-1" id="loginModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title ps-3" id="modalBasicLabel">Login to your Account</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="floatingInput" aria-label="Register" placeholder="name@example.com" required>
-          <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input type="password" minlength="8" class="form-control" id="floatingPassword" aria-label="Register" placeholder="Password" required>
-          <label for="floatingPassword">Password</label>
-        </div>
-      </div>
-      <div class="form-check ms-4">
-        <input class="form-check-input" type="radio" name="radioDefault" id="formRadioDefault">
-        <label class="form-check-label" for="formRadioDefault">Send SMS Verification</label>
-      </div>
-      <div class="form-check ms-4 mb-4">
-        <input class="form-check-input" type="radio" name="radioDefault" id="formRadioChecked" checked="">
-        <label class="form-check-label" for="formRadioChecked">Send Email Verification</label>
-      </div>
-      <div class="input-group w-75 m-auto mb-3">
-        <input type="text" class="form-control" placeholder="Enter One-Time Password" aria-label="OneTimePassword" aria-describedby="input-group-button-right">
-        <button type="button" class="btn btn-outline-secondary" id="input-group-button-right">Get OTP</button>
-      </div>
-
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-success">Login</button>
-      </div>
-    </div>
-  </div>
-</form>
-
-<!--Register Modal-->
-
-<form class="modal" tabindex="-1" id="registerModal">
-  <div class="modal-dialog">
+  <form class="modal bg-success bg-opacity-25" tabindex="-1" id="loginModal">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title ps-3" id="modalBasicLabel">Register for an Account</h5>
+          <h5 class="modal-title ps-3" id="modalBasicLabel">Login to your Account</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput2" aria-label="Register" placeholder="name@example.com" required>
-            <label for="floatingInput2">Email address</label>
+            <input type="email" class="form-control" id="floatingInput" aria-label="Register" placeholder="name@example.com" required>
+            <label for="floatingInput">Email address</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" minlength="8" class="form-control" id="floatingPassword2" aria-label="Register" placeholder="Password" required>
-            <label for="floatingPassword2">New Password</label>
+            <input type="password" minlength="8" class="form-control" id="floatingPassword" aria-label="Register" placeholder="Password" required>
+            <label for="floatingPassword">Password</label>
           </div>
-          <div class="form-floating mb-4">
-            <input type="number" minlength="13" class="form-control" id="floatingNumber" aria-label="Register" placeholder="Number" required>
-            <label for="floatingNumber">Mobile Number (+63)</label>
-          </div>
-          <div class="form-control border-0">
         </div>
-
         <div class="form-check ms-4">
-          <input class="form-check-input" type="radio" name="radioDefault" id="formRadioDefault2">
-          <label class="form-check-label" for="formRadioDefault2">Send SMS Verification</label>
+          <input class="form-check-input" type="radio" name="radioDefault" id="formRadioDefault">
+          <label class="form-check-label" for="formRadioDefault">Send SMS Verification</label>
         </div>
         <div class="form-check ms-4 mb-4">
-          <input class="form-check-input" type="radio" name="radioDefault" id="formRadioChecked2" checked="">
-          <label class="form-check-label" for="formRadioChecked2">Send Email Verification</label>
+          <input class="form-check-input" type="radio" name="radioDefault" id="formRadioChecked" checked="">
+          <label class="form-check-label" for="formRadioChecked">Send Email Verification</label>
         </div>
         <div class="input-group w-75 m-auto mb-3">
-          <input type="text" class="form-control" placeholder="Enter One-Time Password" aria-label="OneTimePassword" aria-describedby="input-group-button-right2">
-          <button type="button" class="btn btn-outline-secondary" id="input-group-button-right2">Get OTP</button>
+          <input type="text" class="form-control" placeholder="Enter One-Time Password" aria-label="OneTimePassword" aria-describedby="input-group-button-right">
+          <button type="button" class="btn btn-outline-secondary" id="input-group-button-right">Get OTP</button>
         </div>
 
         <div class="modal-footer">
-          <button type="submit" class="btn btn-success">Register</button>
+          <button type="submit" class="btn btn-success">Login</button>
         </div>
       </div>
     </div>
-  </div>
-</form>
+  </form>
 
-<!--Search Bar-->
+  <!--Register Modal-->
+
+  <form class="modal bg-success bg-opacity-25" tabindex="-1" id="registerModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title ps-3" id="modalBasicLabel">Register for an Account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput2" aria-label="Register" placeholder="name@example.com" required>
+              <label for="floatingInput2">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" minlength="8" class="form-control" id="floatingPassword2" aria-label="Register" placeholder="Password" required>
+              <label for="floatingPassword2">New Password</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="number" minlength="13" class="form-control" id="floatingNumber" aria-label="Register" placeholder="Number" required>
+              <label for="floatingNumber">Mobile Number (+63)</label>
+            </div>
+            <div class="form-control border-0">
+          </div>
+
+          <div class="form-check ms-4">
+            <input class="form-check-input" type="radio" name="radioDefault" id="formRadioDefault2">
+            <label class="form-check-label" for="formRadioDefault2">Send SMS Verification</label>
+          </div>
+          <div class="form-check ms-4 mb-4">
+            <input class="form-check-input" type="radio" name="radioDefault" id="formRadioChecked2" checked="">
+            <label class="form-check-label" for="formRadioChecked2">Send Email Verification</label>
+          </div>
+          <div class="input-group w-75 m-auto mb-3">
+            <input type="text" class="form-control" placeholder="Enter One-Time Password" aria-label="OneTimePassword" aria-describedby="input-group-button-right2">
+            <button type="button" class="btn btn-outline-secondary" id="input-group-button-right2">Get OTP</button>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!--Search Bar-->
 
   <section class="row w-100 pt-2 pb-2 ps-2 m-0 search">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-6 m-auto">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-6 m-auto pb-3">
         <form class="d-flex justify-content-center align-items-center d-xl-flex order-3">
           <input class="form-control m-0 h-50" placeholder="Search" aria-label="Search" required>
           <button class="btn m-0 h-50 bg-gradient" type="submit">
@@ -201,18 +200,18 @@
     </div>
   </section>
 
-<!--Alert-->
+  <!--Alert-->
 
-  <alert class="alert alert-warning alert-dismissible fade show ms-lg-0 me-lg-0 m-0 text-center border-0 d-flex flex-column flex-sm-row" id="register-now" role="alert">
-    <p class="p-0 m-0 fs-5"><i class="fa-solid fa-gift align-self-center icon-gift d-sm-flex "></i></p>
-    <p class="mb-0 fs-6 ms-5 me-5 ms-sm-0 me-sm-0 d-none d-sm-flex">Register now & Get ₱150 off on 3 or more items.</p>
-    <button class="pt-1 pb-1 ps-3 pe-3 ms-5 me-5 ms-sm-0 me-sm-0 border-0 text-dark m-0 redeem-gift d-md-inline-block" id="redeem-now" data-bs-toggle="modal" data-bs-target="#mainModal"><strong><span class="d-sm-none">Register now & </span>Redeem Gift</strong></button>
-    <button type="button" class="btn-close btn-close-white p-0 mt-3 me-3" data-bs-dismiss="alert" aria-label="Close"></button>
-  </alert>
+    <alert class="alert alert-warning alert-dismissible fade show ms-lg-0 me-lg-0 m-0 text-center border-0 d-flex flex-column flex-sm-row" id="register-now" role="alert">
+      <p class="p-0 m-0 fs-5"><i class="fa-solid fa-gift align-self-center icon-gift d-sm-flex "></i></p>
+      <p class="mb-0 fs-6 ms-5 me-5 ms-sm-0 me-sm-0 d-none d-sm-flex">Register now & Get ₱150 off on 3 or more items.</p>
+      <button class="pt-1 pb-1 ps-3 pe-3 ms-5 me-5 ms-sm-0 me-sm-0 border-0 text-dark m-0 redeem-gift d-md-inline-block" id="redeem-now" data-bs-toggle="modal" data-bs-target="#mainModal"><strong><span class="d-sm-none">Register now & </span>Redeem Gift</strong></button>
+      <button type="button" class="btn-close btn-close-white p-0 mt-3 me-3" data-bs-dismiss="alert" aria-label="Close"></button>
+    </alert>
 
-<!--Alert Modal-->
+  <!--Alert Modal-->
 
-  <form class="modal" tabindex="-1" id="mainModal"> 
+  <form class="modal bg-success bg-opacity-25" tabindex="-1" id="mainModal"> 
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -1004,8 +1003,9 @@
     </div>
 </footer>
 
-<!--Bootstrap CSS and JavaScript-->
+<!--Bootstrap, JavaScript and other Scripts-->
 
+<script src="https://kit.fontawesome.com/b8b5c0695c.js" crossorigin="anonymous"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="Bootstrap 5.2.2/js/bootstrap.bundle.js"></script>
 
