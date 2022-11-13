@@ -113,7 +113,7 @@
   .parallax {
     padding-top: 0;
     padding-bottom: 5em;
-    background: url(leaves.jpg) repeat fixed 100%;
+    background: url(imgParallax/leaves.jpg) repeat fixed 100%;
     background-size: 100%;
     height: auto;
   }
@@ -489,7 +489,7 @@
   .parallax2 {
     padding-top: 3em;
     padding-bottom: 5em;
-    background: url(leaves2.jpg) repeat fixed 100%;
+    background: url(imgParallax/leaves2.jpg) repeat fixed 100%;
     background-size: 100%;
     height: auto;
   }
